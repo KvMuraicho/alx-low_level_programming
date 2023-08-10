@@ -1,2 +1,2 @@
-echo -e '#include <stdio.h>\n\n/**\n * main - Entry point\n *\n * Return: Always 0 (Success)\n */\nint main(void)\n{\n    return (0);\n}' > main.c
+#!/bin/bash echo -e '#include <stdio.h>\n\n/**\n * main - Entry point\n *\n * Return: Always 0 (Success)\n */\nint main(void)\n{\n    return (0);\n}' > main.c
 gcc -S -masm=intel main.c -o main.s && cat main.s
