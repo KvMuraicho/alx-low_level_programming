@@ -1,0 +1,21 @@
+# Save the following C code to a file named `main.c`:
+'''
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+    return (0);
+}
+'''
+
+# To generate the assembly code in Intel syntax:
+gcc -S -masm=intel main.c -o main.s
+
+# View the generated assembly code:
+cat main.s
+
