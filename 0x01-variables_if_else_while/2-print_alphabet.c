@@ -1,3 +1,7 @@
+/*
+ * File: 2-print_alphabet.c
+ * Auth: Kelly V Muraicho
+ */
 #include <stdio.h>
 
 int main(void)
