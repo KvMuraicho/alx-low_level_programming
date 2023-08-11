@@ -7,22 +7,23 @@
  */
 int main(void)
 {
-    int i;
-    char c;
+	int i;
+	char c;
+	for (i = 0; i <= 15; i++
+			{
+			if (i < 10)
+			c = i + '0';
+			else
+			c = i - 10 + 'a';
+			
+			putchar(c);
+			if (i != 15)
 
-    for (i = 0; i <= 15; i++)
-    {
-        if (i < 10)
-            c = i + '0';
-        else
-            c = i - 10 + 'a';
-
-        putchar(c);
-        if (i != 15)
-            putchar('\n');
-    }
-    putchar('\n');
-
-    return (0);
+			putchar('\n');
+			}
+			putchar('\n');
+			
+			return (0);
+			
 }
 
