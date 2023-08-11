@@ -19,8 +19,6 @@ int main(void)
             c = i - 10 + 'a';
 
         putchar(c);
-        if (i != 15)
-            putchar('\n');
     }
     putchar('\n');
 
