@@ -1,6 +1,7 @@
-/*
- * File: 2-print_alphabet.c
- * Auth: Kelly V Muraicho
+/**
+ * main - Prints the alphabet in lowercase.
+ *
+ * Return: Always 0.
  */
 #include <stdio.h>
 
@@ -12,6 +13,7 @@ int main(void)
     {
         putchar(letter);
     }
+
     putchar('\n');
 
     return (0);
