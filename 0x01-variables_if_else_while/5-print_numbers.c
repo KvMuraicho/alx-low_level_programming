@@ -1,7 +1,7 @@
 /*
  * File: 4-print_alphabt.c
  * 
- * Return:  Always 0.
+ * 
  */
 
 #include <stdio.h>
