@@ -12,15 +12,13 @@
  */
 int main(void)
 {
-	char letter;
-
-	for (letter = 'a'; letter <= 'z'; letter++)
+	char num;
+	
+	for (num = '0'; num <= '9'; num++)
 	{
-		if (letter != 'e' && letter != 'q')
-			putchar(letter);
+		putchar(num);
 	}
-
 	putchar('\n');
-
+       
 	return (0);
 }
