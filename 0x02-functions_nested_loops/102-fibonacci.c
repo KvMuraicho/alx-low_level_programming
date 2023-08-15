@@ -5,25 +5,27 @@
  * followed by a new line
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-    unsigned long long int a = 1, b = 2, next;
-    int i;
+	long int i, j, k, next;
 
-    printf("1, 2");
+	j = 1;
 
-    for (i = 3; i <= 50; i++)
-    {
-        next = a + b;
-        printf(", %llu", next);
+	k = 2;
 
-        // Shift the variables for the next iteration
-        a = b;
-        b = next;
-    }
+	for (i = 1; i <= 50; ++i)
+	{
+		if (j != 20365011074)
+		{
+			printf("%ld, ", j);
+		} else
+		{
+			printf("%ld\n", j);
+		}
+		next = j + k;
+		j = k;
+		k = next;
+	}
 
-    printf("\n");
-    return 0;
+	return (0);
 }
-
