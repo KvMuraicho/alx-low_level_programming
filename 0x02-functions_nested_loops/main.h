@@ -1,7 +1,8 @@
-#ifndef MAIN_HEADER_FILE
-#define MAIN_HEADER_FILE
+#ifndef MAIN_H
+#define MAIN_H
 
-int_putchar(char c);
+
+int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int c);
@@ -16,4 +17,4 @@ void print_to_98(int n);
 void print_times_table(int n);
 
 
-#endif 
+#endif /* MAIN_H */
