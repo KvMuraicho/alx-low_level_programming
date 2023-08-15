@@ -2,15 +2,16 @@
 
 /**
  * print_alphabet - Entry point
- * Return:0
+ * Return: None (void function)
  */
 
 void print_alphabet(void)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
-_putchar(ch);
-_putchar('\n');
-
-
+    char ch;
+    for (ch = 'a'; ch <= 'z'; ch++)
+    {
+        _putchar(ch);
+    }
+    _putchar('\n');
 }
+
