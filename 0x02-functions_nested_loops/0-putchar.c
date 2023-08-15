@@ -1,4 +1,4 @@
-// main.h
+/* main.h */
 #ifndef MAIN_H
 #define MAIN_H
 
@@ -6,7 +6,7 @@ int _putchar(char c);
 
 #endif /* MAIN_H */
 
-// _putchar.c
+/* _putchar.c */
 #include <unistd.h>
 
 int _putchar(char c)
@@ -14,7 +14,7 @@ int _putchar(char c)
     return write(1, &c, 1);
 }
 
-// main.c
+/* main.c */
 #include "main.h"
 
 int main(void) {
