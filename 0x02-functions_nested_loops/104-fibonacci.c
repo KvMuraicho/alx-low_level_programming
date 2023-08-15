@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 
+/**
+ * main - finds and prints the first 98 Fibonacci numbers,
+ * starting with 1 and 2
+ * followed by a new line
+ * Return: ALways 0 (Success)
+ */
+
 #define MAX_SIZE 1000  /* this size should be sufficient for our purpose */
 
 /* Function to add two string numbers */
