@@ -8,9 +8,13 @@
  */
 int add(int a, int b)
 {
-	int c;
+    int c;
 
-	c = a + b;
+    c = a + b;
 
-	return (c);
+    return (c);
 }
+
+/* Dummy typedef to ensure non-empty translation unit */
+typedef int dummy_typedef;
+
