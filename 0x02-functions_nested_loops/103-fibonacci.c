@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - finds and prints the sum of the even-valued terms
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
     unsigned long a = 1, b = 2, next, sum = 2;  /* We initialize sum to 2 because the second Fibonacci term is 2 and even. */
