@@ -1,16 +1,30 @@
+// main.h
+#ifndef MAIN_H
+#define MAIN_H
+
+int _putchar(char c);
+
+#endif /* MAIN_H */
+
+// _putchar.c
+#include <unistd.h>
+
+int _putchar(char c)
+{
+    return write(1, &c, 1);
+}
+
+// main.c
 #include "main.h"
 
-/**
-*main - function prints text as output
-*
-*Return:return 0
-*/
 int main(void) {
-    char str[] = "_putchar";
-    for(int i = 0; str[i] != '\0'; i++) {
-        _putchar(str[i]);
+    char *str = "_putchar";
+
+    while (*str) {
+        _putchar(*str++);
     }
     _putchar('\n');
 
     return 0;
 }
+
