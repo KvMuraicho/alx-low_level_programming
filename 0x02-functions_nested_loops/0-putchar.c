@@ -1,30 +1,20 @@
-/* main.h */
-#ifndef MAIN_H
-#define MAIN_H
-
-int _putchar(char c);
-
-#endif /* MAIN_H */
-
-/* _putchar.c */
-#include <unistd.h>
-
-int _putchar(char c)
-{
-    return write(1, &c, 1);
-}
-
-/* main.c */
 #include "main.h"
 
-int main(void) {
-    char *str = "_putchar";
+/**
+ * main -  prints _putchar, followed by a new line
+ * Return: Always 0 
+ */
+int main(void)
+{
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-    while (*str) {
-        _putchar(*str++);
-    }
-    _putchar('\n');
-
-    return 0;
+	return (0);
 }
-
