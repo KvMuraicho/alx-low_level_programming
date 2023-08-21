@@ -1,26 +1,26 @@
 #include "main.h"
 
 /**
- * puts2 - prints one char out of 2 of a string
- * followed by a new line
- * @str: string to print the chars from
+ * print_second_half - Outputs the latter half of a string
+ * @s: The string to be processed
  */
-void puts2(char *str)
+void print_second_half(char *s)
 {
+    int length = 0;
+    int start, i;
 
-	int len, i;
+    while (s[length] != '\0')
+    {
+        length++;
+    }
 
-	len = 0;
+    start = (length % 2 == 0) ? length / 2 : (length + 1) / 2;
 
-	while (str[len] != '\0')
-	{
-		len++;
-	}
+    for (i = start; s[i] != '\0'; i++)
+    {
+        _putchar(s[i]);
+    }
 
-	for (i = 0; i < len; i += 2)
-	{
-		_putchar(str[i]);
-	}
-
-	_putchar('\n');
+    _putchar('\n');
 }
+
