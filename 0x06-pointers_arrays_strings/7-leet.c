@@ -7,19 +7,19 @@
  * Return: The encoded string.
  */
 char *leet(char *s) {
-    int i, j;
-    char letters[] = "aAeEoOtTlL";
-    char numbers[] = "43007110";
+    char original[] = "aAeEoOtTlL";
+    char replacement[] = "4300711701";
+    int i = 0, j;
 
-    for (i = 0; s[i]; i++) {
-        for (j = 0; letters[j]; j++) {
-            if (s[i] == letters[j]) {
-                s[i] = numbers[j / 2];
-                break;
+    while (s[i]) {
+        for (j = 0; original[j]; j++) {
+            if (s[i] == original[j]) {
+                s[i] = replacement[j];
+                break; 
             }
         }
+        i++;
     }
-
     return s;
 }
 
