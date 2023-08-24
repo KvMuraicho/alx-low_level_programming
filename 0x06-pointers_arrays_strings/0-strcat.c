@@ -6,7 +6,6 @@
  * @src: string to be concatenated to dest
  * Return: Pointer to the concatenated string.
  */
-
 char *_strcat(char *dest, char *src)
 {
 	int lengthD = 0;
