@@ -5,6 +5,7 @@
  * main - prints the opcodes of its own main function.
  * @argc: argument count.
  * @argv: argument vector.
+ *
  * Return: 0 on success, 1 or 2 on error.
  */
 int main(int argc, char **argv)
@@ -17,15 +18,12 @@ int main(int argc, char **argv)
         printf("Error\n");
         exit(1);
     }
-
     bytes = atoi(argv[1]);
-
     if (bytes < 0)
     {
         printf("Error\n");
         exit(2);
     }
-
     ptr = (char *)&main;
     for (i = 0; i < bytes; i++)
     {
@@ -34,7 +32,6 @@ int main(int argc, char **argv)
             printf(" ");
     }
     printf("\n");
-
     return (0);
 }
 
