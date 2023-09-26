@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /**
  * find_loop_start - Finds the starting node of a loop.
  * @head: Pointer to the head of the list.
@@ -69,4 +70,3 @@ size_t print_listint_safe(const listint_t *head)
 
 	return (nodes);
 }
-
